@@ -10,8 +10,11 @@ def limpar_dados (dados) :
             continue
     return dados_limpos
 
-def calcular_media () :
-    pass
+def calcular_media(dados_limpos): #Colocar a lista (dados_limpos)
+    soma = sum(dados_limpos)
+    quantidade = len(dados_limpos)
+    media = soma / quantidade
+    return media
 
 def calcular_mediana () :
     pass
@@ -19,10 +22,16 @@ def calcular_mediana () :
 def calcular_variancia () :
     pass
 
-def obter_extremos () :
-    pass
+def obter_extremos (dados) :
+    menor = min(dados)
+    maior = max(dados)
+    return menor, maior
 
 dados = limpar_dados ( dados_sujos )
+menor, maior = obter_extremos(dados)
 
 print ( f" Dados processados : { dados }")
+print(f"Extremo menor: {menor} ")
+print(f"Extremo maior: {maior} ")
+
 print ("Verificado por : Gustavo(owner)")
