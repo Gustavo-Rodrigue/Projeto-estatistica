@@ -38,4 +38,4 @@ print(f"A média dos dados é: {media}")
 
 print ("Verificado por : Gustavo(owner)")
 print("Verificado por: Gustavo de Farias")
-
+print("Função media verificado por: Felipe")
